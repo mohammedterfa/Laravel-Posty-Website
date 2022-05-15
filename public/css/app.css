@@ -874,6 +874,9 @@ input:checked + .toggle-bg {
 .z-40 {
   z-index: 40;
 }
+.m-6 {
+  margin: 1.5rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1075,6 +1078,10 @@ input:checked + .toggle-bg {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
