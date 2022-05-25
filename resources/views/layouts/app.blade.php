@@ -27,7 +27,7 @@
 
 
                 <li>
-                    <a href="" class="p-3">Mohammed Terfa</a>
+                    <a href="" class="p-3">{{ auth()->user()->name }}</a>
                 </li>
 
                 <li>
