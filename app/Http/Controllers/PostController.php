@@ -8,7 +8,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index(){
-        $posts = POST::with(['user', 'likes'])->paginate(20);
+        $posts = POST::latest()->with(['user', 'likes'])->paginate(20);
         return view('posts.index', [
             'posts' => $posts
         ]);
@@ -25,6 +25,9 @@ class PostController extends Controller
     }
 
     public function destroy(Post $post){
+
+        $this->authorize('delete', $post);
+
         $post->delete();
 
         return back();
